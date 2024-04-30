@@ -133,18 +133,14 @@ const TherapyDetails = (props: any) => {
         }
         {
           data == "Depression" &&
-          <TouchableOpacity onPress={() => {
-            props.navigation.navigate("BottomTabView", {
-              screen: "TherapiesTab"
-            })
-          }}
+          <TouchableOpacity onPress={() => { navigation.navigate("TherapyDetailStart") }}
             style={Styles.nextButton}>
             <Text style={Styles.nextText}>{`Start`}</Text>
           </TouchableOpacity>
         }
         {
           openPay == true ?
-            <Payment open={openPay} close={closePay} confirm={confirmPay}/>
+            <Payment open={openPay} close={closePay} confirm={confirmPay} />
             : null
         }
         {loadingBuy ? <Loader /> : null}

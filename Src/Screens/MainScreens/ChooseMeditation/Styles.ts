@@ -50,20 +50,12 @@ const styles = StyleSheet.create({
   icon: {
     color: Colors.Charade,
   },
-  trashIcon: {
-    color: Colors.Charade,
-    marginRight: hp(1.5)
-  },
   titleText: {
     fontSize: 24,
     fontFamily: "SF-Pro-Bold",
     color: Colors.Charade,
   },
-  mainDataContainer: {
-    flex: 0.65,
-    justifyContent: "center",
-    alignItems: "center"
-  },
+
   scrollContent: {
     marginBottom: hp("6%"),
     marginTop: hp(2),
@@ -71,27 +63,9 @@ const styles = StyleSheet.create({
   dataWrapper: {
     width: widthScreen / 1.12,
     alignSelf: "center",
-  },
-  descriptionBold: {
-    fontSize: 16,
-    fontFamily: "SF-Pro-Regular",
-    color: Colors.StormDust,
-    marginTop: hp(2),
-    textAlign: "center",
-    lineHeight: 26
-  },
-  mainImage: {
-    width: hp(30),
-    height: hp(25),
-    alignSelf: "center",
-    marginBottom: hp(2)
+    marginTop: hp(3)
   },
 
-  bottomContainer: {
-    flex: 0.2,
-    justifyContent: "flex-end",
-    alignItems: "center"
-  },
   nextButton: {
     backgroundColor: Colors.Charade,
     width: widthScreen / 1.12,
@@ -101,18 +75,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 16,
-    marginBottom: hp(3)
-  },
-  nextButtonSecond: {
-    backgroundColor: Colors.Charade,
-    width: widthScreen / 1.12,
-    alignSelf: "center",
-    height: hp(6),
-    flexDirection: "row",
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 16,
-    marginBottom: hp('15%')
+    marginBottom: hp(4)
   },
   nextText: {
     fontSize: 16,
@@ -154,33 +117,21 @@ const styles = StyleSheet.create({
   listTimeWrap: {
     backgroundColor: Colors.Cararra,
     borderRadius: 8,
-    marginRight: hp(1)
-  },
-  timeText: {
-    paddingHorizontal: hp(1.5),
-    paddingVertical: hp(0.7),
-    fontSize: 14,
-    fontFamily: "SF-Pro-Semibold",
-    color: Colors.StormDust,
-  },
-  listLeftWrapper: {
-    width: "75%"
+    marginRight: hp(1.5)
   },
   listRightWrapper: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: hp(1),
-    marginBottom: hp(1)
   },
   chooseTitle: {
     fontSize: 16,
     fontFamily: "SF-Pro-Regular",
     color: Colors.Charade,
   },
-  titleLeft: {
-    fontSize: 12,
-    fontFamily: "SF-Pro-Regular",
-    color: Colors.StormDust,
+  titleLeft:{
+    fontSize: 16,
+    fontFamily: "SF-Pro-Semibold",
+    color: Colors.Charade,
   },
   listDataTitle: {
     fontSize: 16,
@@ -198,6 +149,5 @@ const styles = StyleSheet.create({
     height: 1,
     backgroundColor: Colors.Grey,
   },
-
 });
 export default styles;

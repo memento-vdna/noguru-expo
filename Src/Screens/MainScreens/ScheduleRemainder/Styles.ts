@@ -50,20 +50,12 @@ const styles = StyleSheet.create({
   icon: {
     color: Colors.Charade,
   },
-  trashIcon: {
-    color: Colors.Charade,
-    marginRight: hp(1.5)
-  },
   titleText: {
     fontSize: 24,
     fontFamily: "SF-Pro-Bold",
     color: Colors.Charade,
   },
-  mainDataContainer: {
-    flex: 0.65,
-    justifyContent: "center",
-    alignItems: "center"
-  },
+
   scrollContent: {
     marginBottom: hp("6%"),
     marginTop: hp(2),
@@ -71,26 +63,100 @@ const styles = StyleSheet.create({
   dataWrapper: {
     width: widthScreen / 1.12,
     alignSelf: "center",
-  },
-  descriptionBold: {
-    fontSize: 16,
-    fontFamily: "SF-Pro-Regular",
-    color: Colors.StormDust,
-    marginTop: hp(2),
-    textAlign: "center",
-    lineHeight: 26
-  },
-  mainImage: {
-    width: hp(30),
-    height: hp(25),
-    alignSelf: "center",
-    marginBottom: hp(2)
+    marginTop: hp(3)
   },
 
-  bottomContainer: {
-    flex: 0.2,
-    justifyContent: "flex-end",
+  rangeContainer: {
+    width: widthScreen / 1.12,
+    alignSelf: "center",
+    borderRadius: 16,
+    marginBottom: hp(1),
+    backgroundColor: Colors.SoftPeach,
+    borderWidth: 1,
+    borderColor: Colors.Grey,
+  },
+
+  rangeInnerWrapper: {
+    width: "90%",
+    alignSelf: "center",
+    marginBottom: hp(3),
+    marginTop: hp(3)
+  },
+
+  editTitle: {
+    fontSize: 14,
+    fontFamily: "SF-Pro-Semibold",
+    color: Colors.StormDust,
+    textAlign: "center"
+  },
+
+  timerTitle: {
+    fontSize: 60,
+    fontFamily: "SF-Pro-Black",
+    color: Colors.Tuatara,
+    marginTop: hp(1),
+    textAlign: "center"
+  },
+
+  hourMinWrap: {
+    width: 114,
+    alignSelf: "center",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginTop: hp(1),
+  },
+  hourTxt: {
+    fontSize: 16,
+    fontFamily: "SF-Pro-Semibold",
+    color: Colors.StormDust,
+  },
+
+  listTitle: {
+    fontSize: 20,
+    fontFamily: "SF-Pro-Bold",
+    color: Colors.Charade,
+    marginTop: hp(3),
+    textAlign: "center"
+  },
+
+  cardContainer: {
+    width: widthScreen / 1.2,
+    alignSelf: 'center',
+    marginTop: hp(2.5),
+    flexDirection: "row",
+    justifyContent: "space-evenly",
     alignItems: "center"
+  },
+  cardContainer1: {
+    width: widthScreen / 1.2,
+    alignSelf: 'center',
+    marginTop: hp(1.5),
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "center"
+  },
+  timeWrap: {
+    backgroundColor: Colors.Cararra,
+    borderRadius: 8,
+  },
+  timeWrapBlack: {
+    backgroundColor: Colors.Charade,
+    borderRadius: 8,
+  },
+  timeText: {
+    paddingHorizontal: hp(1.5),
+    paddingVertical: hp(0.7),
+    fontSize: 14,
+    fontFamily: "SF-Pro-Semibold",
+    color: Colors.StormDust,
+  },
+  timeTextBlack: {
+    paddingHorizontal: hp(1.5),
+    paddingVertical: hp(0.7),
+    fontSize: 14,
+    fontFamily: "SF-Pro-Semibold",
+    color: Colors.White,
   },
   nextButton: {
     backgroundColor: Colors.Charade,
@@ -101,18 +167,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 16,
-    marginBottom: hp(3)
-  },
-  nextButtonSecond: {
-    backgroundColor: Colors.Charade,
-    width: widthScreen / 1.12,
-    alignSelf: "center",
-    height: hp(6),
-    flexDirection: "row",
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 16,
-    marginBottom: hp('15%')
+    marginBottom: hp(4)
   },
   nextText: {
     fontSize: 16,
@@ -124,29 +179,18 @@ const styles = StyleSheet.create({
     width: widthScreen / 1.12,
     alignSelf: "center",
     borderRadius: 16,
+    marginBottom: hp(1),
     backgroundColor: Colors.SoftPeach,
     borderWidth: 1,
     borderColor: Colors.Grey,
-    marginTop: hp(2)
+    marginTop: hp(4)
   },
-  listDataWrap: {
-    width: "100%",
-    alignSelf: "center",
-  },
-  listDataWrapper: {
-    width: "90%",
-    alignSelf: "center",
-    marginBottom: hp(2),
-    // marginTop: hp(1.5),
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between"
-  },
+
   listWrapper: {
     width: "90%",
     alignSelf: "center",
-    marginBottom: hp(2),
-    marginTop: hp(2),
+    marginBottom: hp(1.5),
+    marginTop: hp(1.5),
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between"
@@ -154,50 +198,21 @@ const styles = StyleSheet.create({
   listTimeWrap: {
     backgroundColor: Colors.Cararra,
     borderRadius: 8,
-    marginRight: hp(1)
-  },
-  timeText: {
-    paddingHorizontal: hp(1.5),
-    paddingVertical: hp(0.7),
-    fontSize: 14,
-    fontFamily: "SF-Pro-Semibold",
-    color: Colors.StormDust,
-  },
-  listLeftWrapper: {
-    width: "75%"
+    marginRight: hp(1.5)
   },
   listRightWrapper: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: hp(1),
-    marginBottom: hp(1)
   },
   chooseTitle: {
     fontSize: 16,
     fontFamily: "SF-Pro-Regular",
     color: Colors.Charade,
   },
-  titleLeft: {
-    fontSize: 12,
-    fontFamily: "SF-Pro-Regular",
-    color: Colors.StormDust,
-  },
-  listDataTitle: {
-    fontSize: 16,
-    fontFamily: "SF-Pro-Regular",
-    color: Colors.StormDust,
-  },
   meditateIcon: {
     width: 24,
     height: 24,
     marginRight: hp(1)
-  },
-  divider: {
-    width: "100%",
-    alignSelf: "center",
-    height: 1,
-    backgroundColor: Colors.Grey,
-  },
-
+  }
 });
 export default styles;

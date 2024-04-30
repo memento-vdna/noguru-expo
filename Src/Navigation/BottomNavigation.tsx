@@ -69,8 +69,6 @@ export const MeditateStacks = () => {
       }}>
       <MeditateStack.Screen name="Meditate" component={Meditate} />
 
-
-
     </MeditateStack.Navigator>
   );
 }
@@ -86,10 +84,6 @@ const TherapiesStacks = () => {
     </TherapiesStack.Navigator>
   )
 }
-
-
-
-
 
 
 
@@ -152,10 +146,6 @@ export const BottomTabView = (props: any) => {
       <Tab.Screen name="MeditateTab" component={MeditateStacks} />
       <Tab.Screen name="TherapiesTab" component={TherapiesStacks} />
       <Tab.Screen name="CalenderTab" component={CalenderStacks} />
-
-
-
-
 
     </Tab.Navigator>
   );

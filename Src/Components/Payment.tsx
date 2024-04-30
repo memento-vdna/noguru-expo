@@ -22,8 +22,12 @@ const Payment = (props: any) => {
       animationIn="slideInUp"
       animationOut="slideInUp"
       backdropOpacity={0.5}
+      backdropColor={"#09101D"}
       avoidKeyboard={true}
+      propagateSwipe={true}
+      swipeDirection="down"
       isVisible={open}
+      onSwipeComplete={() => { close() }}
       onBackdropPress={() => { close() }}
       style={{ flex: 1, justifyContent: 'flex-end' }}>
       <View style={Styles.modalContainer}>
@@ -233,7 +237,7 @@ const Styles = StyleSheet.create({
   bottomInner: {
     marginBottom: hp(8)
   },
-  payTitle:{
+  payTitle: {
     fontSize: 20,
     fontFamily: "SF-Pro-Semibold",
     color: Colors.Charade,

@@ -28,6 +28,23 @@ import TherapyReview from '../Screens/MainScreens/TherapyReview';
 import LeaveFeedback from '../Screens/MainScreens/LeaveFeedback';
 import ReviewComplete from '../Screens/MainScreens/ReviewComplete';
 
+// Therepy Details Start
+import TherapyDetailStart from '../Screens/MainScreens/TherapyDetailStart';
+import NextSlideFirst from '../Screens/MainScreens/TherapyDetailStart/NextSlideFirst';
+import NextSlideSecond from '../Screens/MainScreens/TherapyDetailStart/NextSlideSecond';
+import BreakState from '../Screens/MainScreens/TherapyDetailStart/BreakState';
+import MultiChoice from '../Screens/MainScreens/TherapyDetailStart/MultiChoice';
+import Range from '../Screens/MainScreens/TherapyDetailStart/Range';
+import RemainderOffer from '../Screens/MainScreens/TherapyDetailStart/RemainderOffer';
+import VolumeAdjust from '../Screens/MainScreens/TherapyDetailStart/VolumeAdjust';
+import EndTherapy from '../Screens/MainScreens/TherapyDetailStart/EndTherapy';
+import NewReminder from '../Screens/MainScreens/NewReminder';
+// Therepy Details End
+
+// Schedule
+import ScheduleRemainder from '../Screens/MainScreens/ScheduleRemainder';
+import ChooseMeditation from '../Screens/MainScreens/ChooseMeditation';
+
 type RootStackParamList = {
   AnimatedRing: undefined,
   Splash: undefined,
@@ -47,7 +64,20 @@ type RootStackParamList = {
   TherapyDetails: undefined,
   TherapyReview: undefined,
   LeaveFeedback: undefined,
-  ReviewComplete: undefined
+  ReviewComplete: undefined,
+  TherapyDetailStart: undefined,
+  NextSlideFirst: undefined,
+  NextSlideSecond: undefined,
+  BreakState: undefined,
+  MultiChoice: undefined,
+  Range: undefined,
+  RemainderOffer: undefined,
+  VolumeAdjust: undefined,
+  EndTherapy: undefined,
+  NewReminder: undefined,
+
+  ScheduleRemainder: undefined,
+  ChooseMeditation: undefined,
 };
 
 // type AuthStackParamList = {
@@ -102,7 +132,21 @@ export default function RootNavigator() {
 
         <RootStack.Screen name='ReviewComplete' component={ReviewComplete} options={{ headerShown: false }} />
 
-        {/* ReviewComplete */}
+        <RootStack.Screen name='TherapyDetailStart' component={TherapyDetailStart} options={{ headerShown: false }} />
+        <RootStack.Screen name='NextSlideFirst' component={NextSlideFirst} options={{ headerShown: false }} />
+        <RootStack.Screen name='NextSlideSecond' component={NextSlideSecond} options={{ headerShown: false }} />
+        <RootStack.Screen name='BreakState' component={BreakState} options={{ headerShown: false }} />
+        <RootStack.Screen name='MultiChoice' component={MultiChoice} options={{ headerShown: false }} />
+        <RootStack.Screen name='Range' component={Range} options={{ headerShown: false }} />
+        <RootStack.Screen name='RemainderOffer' component={RemainderOffer} options={{ headerShown: false }} />
+        <RootStack.Screen name='VolumeAdjust' component={VolumeAdjust} options={{ headerShown: false }} />
+        <RootStack.Screen name='EndTherapy' component={EndTherapy} options={{ headerShown: false }} />
+        <RootStack.Screen name='NewReminder' component={NewReminder} options={{ headerShown: false }} />
+
+        <RootStack.Screen name='ScheduleRemainder' component={ScheduleRemainder} options={{ headerShown: false }} />
+        <RootStack.Screen name='ChooseMeditation' component={ChooseMeditation} options={{ headerShown: false }} />
+
+        {/*  */}
       </RootStack.Navigator>
     </NavigationContainer>
 

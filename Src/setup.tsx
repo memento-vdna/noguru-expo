@@ -14,6 +14,11 @@ export default function Root() {
     "SF-Pro-Regular": require("../assets/Fonts/SF-Pro-Display-Regular.ttf"),
     "SF-Pro-Semibold": require("../assets/Fonts/SF-Pro-Display-Semibold.ttf"),
     "SF-Pro-Thin": require("../assets/Fonts/SF-Pro-Display-Thin.ttf"),
+    "SF-Pro-Black": require("../assets/Fonts/SF-Pro-Display-Black.ttf"),
+    "Poppins-Regular": require("../assets/Fonts/Poppins-Regular.ttf"),
+    "Poppins-Medium": require("../assets/Fonts/Poppins-Medium.ttf"),
+    "Poppins-SemiBold": require("../assets/Fonts/Poppins-SemiBold.ttf"),
+    "Poppins-Bold": require("../assets/Fonts/Poppins-Bold.ttf"),
   });
 
   const handleOnLayout = useCallback(async () => {

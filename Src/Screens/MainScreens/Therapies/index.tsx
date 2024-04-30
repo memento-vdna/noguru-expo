@@ -45,7 +45,7 @@ const Therapies = (props: any) => {
             {/* List 1 */}
             <View style={Styles.showContainer}>
               <TouchableOpacity onPress={() => {
-                props.navigation.navigate("TherapyDetails", {
+                navigation.navigate("TherapyDetails", {
                   therepyName: "Depression"
                 })
               }}

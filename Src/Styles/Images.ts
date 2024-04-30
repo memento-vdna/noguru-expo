@@ -22,14 +22,15 @@ const images = {
   applePay: require('../../assets/Icons/applePay.png'),
   person: require('../../assets/Icons/person.png'),
   home: require('../../assets/Icons/home.png'),
+  clock: require('../../assets/Icons/clock.png'),
 
+  
 
   // Bottom Icons
   meditate: require('../../assets/Bottom/meditate.png'),
-
   mindTools: require('../../assets/Bottom/mindTools.png'),
-
   calender: require('../../assets/Bottom/calender.png'),
+
 
   // HomeIcons
   depression: require('../../assets/HomeIcons/depression.png'),
@@ -39,6 +40,12 @@ const images = {
   aniextyStop: require('../../assets/HomeIcons/aniextyStop.png'),
   aniexty: require('../../assets/HomeIcons/aniexty.png'),
   card: require('../../assets/HomeIcons/card.png'),
+  therapyBackground: require('../../assets/HomeIcons/therapyBackground.png'),
+  video: require('../../assets/HomeIcons/video.png'),
+  repeat: require('../../assets/HomeIcons/repeat.png'),
+  scheduleIcon: require('../../assets/HomeIcons/scheduleIcon.png'),
+  // video: require('../../assets/HomeIcons/video.png'),
+
 
   // Dummy Data
   user1: require('../../assets/dataDummy/user1.png'),
