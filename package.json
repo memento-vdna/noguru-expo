@@ -35,7 +35,8 @@
     "react-native-screens": "~3.22.0",
     "react-native-svg": "13.9.0",
     "react-native-vector-icons": "^10.0.3",
-    "rn-slide-button": "^1.0.3"
+    "rn-slide-button": "^1.0.3",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
