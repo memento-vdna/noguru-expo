@@ -60,7 +60,7 @@ const SignUp = (props: any) => {
                   <Text style={Styles.welcomeText}>{`Sign Up`}</Text>
                   <Text style={Styles.messageText}>
                     <Text style={Styles.messageText}>{`Using  `}</Text>
-                    <Text style={Styles.messageTextBold}>{`Arthurprilutzki@noguru.com  `}</Text>
+                    <Text style={Styles.messageTextBold}>{`arthurprilutzki@noguru.com  `}</Text>
                     <Text style={Styles.messageText}>{`to Register.`}</Text>
                   </Text>
                 </View>

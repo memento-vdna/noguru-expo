@@ -68,7 +68,7 @@ const Calender = (props: any) => {
   }, []);
 
   const closeDelete = () => {
-    Alert.alert('You sure to want delete this shedule?', '', [
+    Alert.alert('You sure to want delete this schedule?', '', [
       {
         text: 'Cancel',
         onPress: () => console.log('Cancel Pressed'),
@@ -92,7 +92,7 @@ const Calender = (props: any) => {
         <View style={Styles.headerMain}>
           <View style={Styles.headerContainer}>
 
-            <Text style={Styles.titleText}>{`Shedule`}</Text>
+            <Text style={Styles.titleText}>{`Schedule`}</Text>
 
             <TouchableOpacity onPress={() => { setEditList(!editList) }}>
               <Ionic name={"pencil"} size={22} style={Styles.icon} />

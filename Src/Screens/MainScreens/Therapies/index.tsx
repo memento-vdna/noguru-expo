@@ -80,7 +80,7 @@ const Therapies = (props: any) => {
             <View style={Styles.showContainer}>
               <TouchableOpacity style={Styles.boxContainer}>
                 <Image source={Images.aniextyStop} style={Styles.depressIcon} />
-                <Text style={Styles.boxTitle}>{`Emergency anxiety stop`}</Text>
+                <Text style={Styles.boxTitle}>{`Emergency Anxiety Stop`}</Text>
               </TouchableOpacity>
 
               <TouchableOpacity style={Styles.boxContainer}>

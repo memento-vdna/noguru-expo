@@ -108,7 +108,7 @@ export const BottomTabView = (props: any) => {
           }
           else if (route.name === 'CalenderTab') {
             image = Images.calender;
-            name = "Shedule"
+            name = "Schedule"
           }
 
 
